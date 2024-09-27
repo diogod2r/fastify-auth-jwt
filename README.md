@@ -1,5 +1,3 @@
- Fastify Auth JWT body { font-family: Arial, sans-serif; margin: 20px; } h1 { color: aqua; } h2 { color: green; } pre code { background-color: black; color: #c79176; padding: 10px; overflow: auto; } code { background-color: #f4f4f4; color: black; padding: 2px 4px; } ul { list-style-type: disc; margin-left: 20px; } ol { margin-left: 20px; } li { margin-bottom: 10px; } a { color: #1a73e8; text-decoration: none; } a:hover { text-decoration: underline; }
-
 Fastify Auth JWT
 ================
 
