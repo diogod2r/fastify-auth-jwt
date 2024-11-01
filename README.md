@@ -53,6 +53,11 @@ Rotas
 -----
 
 *   `POST /signin` - Realiza o login de um usuário, retornando tokens JWT e cookies.
+     {
+       "user": "test@email.com",
+       "password": "12345",
+       "stay": "true"
+     }
 *   `GET /auth` - Verifica se o usuário está autenticado usando o token de acesso. Se o token estiver expirado, tenta renovar com o refresh token.
 
 Banco de Dados
@@ -65,6 +70,13 @@ Crie uma tabela `users` no PostgreSQL com o seguinte esquema:
       user VARCHAR(255) UNIQUE NOT NULL,
       password VARCHAR(255) NOT NULL
     );
+Cadastre um usuario na tabela users no banco de dados (O usuario deve ser um email, e a senha deve estar Criptografada em Bcrypt gere aqui => https://bcrypt-generator.com
+
+    INSERT INTO users
+      ("user", password)
+      VALUES
+      ('test@email.com', '$2a$12$uiGs5Nmqkg7NlPvPuLVgZeH0kDNPPNnCWSMy.jfhHZrImvfiHHVd.')
+
 
 Tecnologias
 -----------
