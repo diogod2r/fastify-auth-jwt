@@ -53,11 +53,12 @@ Rotas
 -----
 
 *   `POST /signin` - Realiza o login de um usuário, retornando tokens JWT e cookies.
-     {
-       "user": "test@email.com",
-       "password": "12345",
-       "stay": "true"
-     }
+*       {
+          "user": "test@email.com",
+          "password": "12345",
+          "stay": "true"
+       }
+    
 *   `GET /auth` - Verifica se o usuário está autenticado usando o token de acesso. Se o token estiver expirado, tenta renovar com o refresh token.
 
 Banco de Dados
